@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sella Store</title>
+</head>
+
+<body dir="rtl">
+    <nav class="position-fixed w-100 sticky-top ">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo user-select-none">
+                <h1 class="text-primary fw-bold fs-1 mb-0">SELLA</h1>
+                <p class="fs-6 fw-bold text-gray text-center mt-0">STORE</p>
+            </a>
+            <p id="toggle-menu" class="mb-0 fw-bold cursor-pointer d-sm d-md-none">ICON</p>
+            <div id="menu" class="links d-none d-md-flex" data-toggle="0">
+                <a href="" class="text-gray fw-bold px-2 mx-3 selected">الصفحة الرئيسية</a>
+                <a href="" class="text-gray fw-bold px-2 mx-3">
+                    الأقسام
+                    <i class="icon-menu-arrow"></i>
+                </a>
+                <a href="" class="text-gray fw-bold px-2 mx-3">الخدمات</a>
+                <a href="" class="text-gray fw-bold px-2 mx-3">من نحن</a>
+            </div>
+            <div class="account">
+                <p class="account text-primary fw-bold cursor-pointer mb-0">تسجيل الدخول</p>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="bigPhotos">
+            <div class="container">
+                <div class="title text-center mb-5">
+                    <h3 class="text-primary fw-bold">تميز بإطلالتك الرائعة وانتقِ أجمل الملبوسات والإكسسوارات<br><span class="bg-primary text-gray rounded-2 py-2 px-4 mt-4 d-block m-auto" style="width: fit-content;">التي تليق بك وبعائلتك</span></h3>
+                </div>
+                <div class="row flex-nowrap overflow-hidden user-select-none" id="slider">
+                    <div class="col-12 col-md-6 col-lg-4 product">
+                        <div class="overflow-hidden rounded-4 position-relative">
+                            <img class="w-100 h-100 object-fit-cover" src="imgs/first.jpg" alt="">
+                            <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                <p class="">اسم المنتج</p>
+                                <p>وبعض التفاصيل المهمة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 product">
+                        <div class="overflow-hidden rounded-4 position-relative">
+                            <img class="w-100 h-100 object-fit-cover" src="imgs/second.jpg" alt="">
+                            <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                <p class="">اسم المنتج</p>
+                                <p>وبعض التفاصيل المهمة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 product">
+                        <div class="overflow-hidden rounded-4 position-relative">
+                            <img class="w-100 h-100 object-fit-cover" src="imgs/third.jpg" alt="">
+                            <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                <p class="">اسم المنتج</p>
+                                <p>وبعض التفاصيل المهمة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 product">
+                        <div class="overflow-hidden rounded-4 position-relative">
+                            <img class="w-100 h-100 object-fit-cover" src="imgs/fourth.jpg" alt="">
+                            <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                <p class="">اسم المنتج</p>
+                                <p>وبعض التفاصيل المهمة</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 product">
+                        <div class="overflow-hidden rounded-4 position-relative">
+                            <img class="w-100 h-100 object-fit-cover" src="imgs/fifth.jpg" alt="">
+                            <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                <p class="">اسم المنتج</p>
+                                <p>وبعض التفاصيل المهمة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newProducts">
+            <div class="container">
+                <div class="title text-center mb-5 ">
+                    <h3 class=" text-gray fw-bold " >أحدث المنتجات في متجرنا</h3>
+                </div>
+                <div class="depts d-flex flex-wrap gap-3 justify-content-center mb-3">
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none bg-primary rounded-3 py-1 px-3">أطفال</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">رجالي</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">نسائية</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">اكسسوارات</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">هدايا</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">هواتف</p>
+                </div>
+                <div class="user-select-none position-relative" id="arrow-slider">
+                    <i class="position-absolute sticky-top top-50 right-arrow cursor-pointer"></i>
+                    <i class="position-absolute sticky-top top-50 left-arrow cursor-pointer"></i>
+                    <div class="row overflow-hidden flex-nowrap">
+                        <div class="col-12 col-md-6 col-lg-4 product">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/first.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/second.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/third.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/fourth.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/fifth.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mostSellers">
+            <div class="container">
+                <div class="title text-center mb-5 ">
+                    <h3 class=" text-gray fw-bold " >أكثر المنتجات مبيعاً</h3>
+                </div>
+                <div class="depts d-flex flex-wrap gap-3 justify-content-center mb-3">
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none bg-primary rounded-3 py-1 px-3">أطفال</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">رجالي</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">نسائية</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">اكسسوارات</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">هدايا</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">هواتف</p>
+                </div>
+                <div class="user-select-none position-relative" id="arrow-slider">
+                    <i class="position-absolute sticky-top top-50 right-arrow cursor-pointer"></i>
+                    <i class="position-absolute sticky-top top-50 left-arrow cursor-pointer"></i>
+                    <div class="row overflow-hidden flex-nowrap">
+                        <div class="col-12 col-md-6 col-lg-4 product">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/first.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/second.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/third.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/fourth.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/fifth.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offers">
+            <div class="container">
+                <div class="title text-center mb-5 ">
+                    <h3 class=" text-gray fw-bold " >عروض الأسعار</h3>
+                </div>
+                <div class="depts d-flex flex-wrap gap-3 justify-content-center mb-3">
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none bg-primary rounded-3 py-1 px-3">أطفال</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">رجالي</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">نسائية</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">اكسسوارات</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">هدايا</p>
+                    <p class="fw-bold text-secondary cursor-pointer user-select-none rounded-3 py-1 px-3">هواتف</p>
+                </div>
+                <div class="user-select-none position-relative" id="arrow-slider">
+                    <i class="position-absolute sticky-top top-50 right-arrow cursor-pointer"></i>
+                    <i class="position-absolute sticky-top top-50 left-arrow cursor-pointer"></i>
+                    <div class="row overflow-hidden flex-nowrap">
+                        <div class="col-12 col-md-6 col-lg-4 product">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/first.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                                <p class="offer-amount position-absolute sticky-top bg-primary text-gray fw-bold py-1 px-4">50&percnt;</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/second.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                                <p class="offer-amount position-absolute sticky-top bg-primary text-gray fw-bold py-1 px-4">40&percnt;</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/third.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                                <p class="offer-amount position-absolute sticky-top bg-primary text-gray fw-bold py-1 px-4">45&percnt;</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/fourth.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                                <p class="offer-amount position-absolute sticky-top bg-primary text-gray fw-bold py-1 px-4">55&percnt;</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 product ">
+                            <div class="overflow-hidden rounded-4 position-relative">
+                                <img class="w-100 h-100 object-fit-cover" src="imgs/fifth.jpg" alt="">
+                                <div class="details d-flex flex-column justify-content-end position-absolute text-primary text-center fw-bold bg-gradient h-50 bottom-0 w-100">
+                                    <p class="">اسم المنتج</p>
+                                    <p>وبعض التفاصيل المهمة</p>
+                                </div>
+                                <p class="offer-amount position-absolute sticky-top bg-primary text-gray fw-bold py-1 px-4">35&percnt;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="title text-center mb-5 ">
+                    <h3 class=" text-gray fw-bold " >آراء العملاء</h3>
+                </div>
+                <div class="row row-gap-4 user-select-none">
+                    <div class="review col-12 col-sm-6 col-lg-4">
+                        <div class="rounded-4 py-3 px-4 bg-white h-100">
+                            <div class="d-flex align-items-center">
+                                <div class="customer-photo rounded-circle ms-2">
+                                    <img src="imgs/avatar.png" alt="" class="w-100 h-100 object-fit-contain">
+                                </div>
+                                <div class="customer-info">
+                                    <p class="text-primary fw-bold fs-5 mb-0">محمد علي أبولحوم</p>
+                                    <p class="text-gray small my-0">مدير تنفيذي</p>
+                                </div>
+                            </div>
+                            <p class="text-center text-gray px-1 mt-3"><span class="text-primary fw-bold fs-4"> &quot; </span>at maxime ut dolor velit deleniti! Aspernatur soluta unde earum ab dignissimos porro corporis!<span class="text-primary fw-bold fs-4"> &quot; </span></p>
+                        </div>
+                    </div>
+                    <div class="review col-12 col-sm-6 col-lg-4">
+                        <div class="rounded-4 py-3 px-4 bg-white h-100">
+                            <div class="d-flex align-items-center">
+                                <div class="customer-photo rounded-circle ms-2">
+                                    <img src="imgs/avatar.png" alt="" class="w-100 h-100 object-fit-contain">
+                                </div>
+                                <div class="customer-info">
+                                    <p class="text-primary fw-bold fs-5 mb-0">محمد علي أبولحوم</p>
+                                    <p class="text-gray small my-0">مدير تنفيذي</p>
+                                </div>
+                            </div>
+                            <p class="text-center text-gray px-1 mt-3"><span class="text-primary fw-bold fs-4"> &quot; </span>at maxime ut dolor velit deleniti! Aspernatur soluta unde earum ab dignissimos porro corporis!<span class="text-primary fw-bold fs-4"> &quot; </span></p>
+                        </div>
+                    </div>
+                    <div class="review col-12 col-sm-6 col-lg-4">
+                        <div class="rounded-4 py-3 px-4 bg-white h-100">
+                            <div class="d-flex align-items-center">
+                                <div class="customer-photo rounded-circle ms-2">
+                                    <img src="imgs/avatar.png" alt="" class="w-100 h-100 object-fit-contain">
+                                </div>
+                                <div class="customer-info">
+                                    <p class="text-primary fw-bold fs-5 mb-0">محمد علي أبولحوم</p>
+                                    <p class="text-gray small my-0">مدير تنفيذي</p>
+                                </div>
+                            </div>
+                            <p class="text-center text-gray px-1 mt-3"><span class="text-primary fw-bold fs-4"> &quot; </span>at maxime ut dolor velit deleniti! Aspernatur soluta unde earum ab dignissimos porro corporis!<span class="text-primary fw-bold fs-4"> &quot; </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="title text-center mb-5 ">
+                    <h3 class=" text-gray fw-bold " >الخدمات التي نقدمها</h3>
+                </div>
+                <div class="row row-gap-4 user-select-none">
+                    <div class="review col-12 col-sm-6 col-lg-4">
+                        <div class="rounded-4 py-3 px-4 bg-white h-100">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <div class="customer-photo rounded-circle ms-2">
+                                    <img src="imgs/avatar.png" alt="" class="w-100 h-100 object-fit-contain">
+                                </div>
+                                <p class="text-primary fw-bold fs-5 my-2">اسم الخدمة المميزة</p>
+                            </div>
+                            <p class="text-center text-gray px-1 mt-3">at maxime ut dolor velit deleniti! Aspernatur soluta unde earum ab dignissimos porro corporis!</p>
+                        </div>
+                    </div>
+                    <div class="review col-12 col-sm-6 col-lg-4">
+                        <div class="rounded-4 py-3 px-4 bg-white h-100">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <div class="customer-photo rounded-circle ms-2">
+                                    <img src="imgs/avatar.png" alt="" class="w-100 h-100 object-fit-contain">
+                                </div>
+                                <p class="text-primary fw-bold fs-5 my-2">اسم الخدمة المميزة</p>
+                            </div>
+                            <p class="text-center text-gray px-1 mt-3">at maxime ut dolor velit deleniti! Aspernatur soluta unde earum ab dignissimos porro corporis!</p>
+                        </div>
+                    </div>
+                    <div class="review col-12 col-sm-6 col-lg-4">
+                        <div class="rounded-4 py-3 px-4 bg-white h-100">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <div class="customer-photo rounded-circle ms-2">
+                                    <img src="imgs/avatar.png" alt="" class="w-100 h-100 object-fit-contain">
+                                </div>
+                                <p class="text-primary fw-bold fs-5 my-2">اسم الخدمة المميزة</p>
+                            </div>
+                            <p class="text-center text-gray px-1 mt-3">at maxime ut dolor velit deleniti! Aspernatur soluta unde earum ab dignissimos porro corporis!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="notes">
+            <div class="container">
+                <div class="title text-center mb-5 ">
+                    <h3 class=" text-gray fw-bold " >آرائك وملاحظاتك تهمنا</h3>
+                    <p class="text-gray w-50 mx-auto my-4">شاركنا كل الملاحظات التي تود أن تراها في متجرنا، فنحن نسعد بتعديلاتكم وآرائكم ونسعى جاهدين لتقديم الأفضل</p>
+                </div>
+            </div>
+            <form action="" class="w-50 m-auto">
+                <div class="d-flex flex-column gap-3">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="الإسم">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="البريد الإلكتروني">
+                    <textarea name="note" id="note" cols="30" rows="10" class="form-control" placeholder="ملاحظاتك وآرائك"></textarea>
+                    <input type="button" value="إرسال الملاحظات" class="btn btn-outline-primary">
+                </div> 
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<script src="js/img-scroll.js"></script>
+<script src="js/script.js"></script>

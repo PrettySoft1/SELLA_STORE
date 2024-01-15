@@ -1,0 +1,202 @@
+:root {
+    --primary: #FFD500;
+    --secondary: #8D7C27;
+    --gray: #707070;
+}
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    transition: .3s;   
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.text-gray {
+    color: var(--gray) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.bg-gray {
+    background-color: var(--gray) !important;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(
+        transparent 5%, #4e4e4e
+    ) !important;
+}
+
+.selected {
+    color: var(--primary) !important
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Nav */
+nav {
+    background-color: white;
+    box-shadow: 0px 3px 10px #dbdbdb;
+    z-index: 9999999999999 !important;
+}
+nav a:hover {
+    color: var(--primary) !important;
+}
+
+.logo h1 {
+    font-size: 38px !important;
+}
+
+.logo p {
+    font-size: 12px !important;
+    margin-top: -6px !important;
+    letter-spacing: 15px;
+    margin-right: -18px !important; 
+}
+
+.account p:hover {
+    color: var(--secondary) !important;
+}
+
+@media screen and (max-width: 767px) {
+    .links-toggle {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0px 5px 5px #dbdbdb;
+        display: flex !important;
+        flex-direction: column;
+        overflow: hidden;
+        height: 0px;
+    }
+    .links-toggle-show {
+        height: 184px;
+    }
+    .links-toggle a {
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .links-toggle a:hover, .selected {
+        background-color: #ffd50034;
+        color: var(--primary);
+    }
+}
+/* Nav */
+
+/* slider */
+#slider {
+    scroll-behavior: auto;
+}
+#slider .product > div {
+    height: 350px !important;
+}
+
+img {
+    pointer-events: none;
+}
+/* slider */
+/* New Products */
+#arrow-slider .product > div {
+    height: 250px !important;
+}
+.left-arrow, .right-arrow {
+    transform: translateY(-50%);
+}
+.left-arrow {
+    left: 0px;
+    border-width: 20px;
+    border-color: transparent var(--primary) transparent transparent;
+    border-style: solid;
+}
+.right-arrow {
+    right: 0;
+    border-width: 20px;
+    border-color: transparent transparent transparent var(--primary);
+    border-style: solid;
+}
+.depts p {
+    transition: none;
+}
+.depts p:hover {
+    transition: .3s;
+    background-color: #FFD500;
+    /* color:#FFD500 !important; */
+}
+/* New Products */
+/* Offers */
+.offer-amount {
+    left: 0;
+    top: 15%;
+    clip-path: polygon(0px -3px, 100% -3px, 80% 50%, 100% 105%, 0 105%);
+    box-shadow: 2px 0px 10px rgb(133, 133, 133);
+}
+/* Offers */
+/* Reviews */
+.review > div {
+    box-shadow: 0px 0px 10px #dbdbdb;
+}
+
+.customer-photo {
+    width: 70px;
+    height: 70px;
+}
+/* Reviews */
+/* Notes */
+form input:not(input[type='button']), form textarea  {
+    border: 1px solid var(--secondary) !important;
+}
+form input:focus, form textarea:focus {
+    box-shadow: 0px 0px 5px 4px #ffd50031 !important;
+}
+form input::placeholder, form textarea::placeholder {
+    color: #8D7C2760 !important;
+}
+.btn-outline-primary {
+    --bs-btn-color: var(--secondary);
+    --bs-btn-border-color: var(--secondary);
+    --bs-btn-hover-color: var(--primary);
+    --bs-btn-hover-bg: var(--secondary);
+    --bs-btn-hover-border-color: var(--secondary);
+    --bs-btn-active-color: var(--primary);
+    --bs-btn-active-bg: var(--secondary);
+    --bs-btn-active-border-color: var(--secondary);
+    --bs-btn-disabled-color: var(--secondary);
+    --bs-btn-disabled-border-color: var(--secondary);
+}
+/* Notes */
