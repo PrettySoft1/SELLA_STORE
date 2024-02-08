@@ -1,0 +1,150 @@
+* {
+    transition: .3s;
+}
+
+#search {
+    outline: none;
+    border: 1px solid var(--primary) !important;
+    border-radius: 10px;
+    padding: 2px 10px 2px 30px;
+    color: var(--primary);
+    transition: .3s;
+}
+
+ul {
+    list-style: none;
+    padding: 0px !important;
+}
+
+#toggle-menu {
+    font-size: 25px;
+}
+
+.searchIcon {
+    left: 12%;
+    transform: translateY(-50%);
+}
+
+
+/* side bar */
+.sidebar {
+    top: 75px;
+    box-shadow: -3px 0px 10px #dbdbdb;
+    min-height: 100vh;
+    white-space: nowrap;
+    width: 0px;
+    z-index: calc(9*10000000);
+}
+
+aside a,
+aside span {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+aside i {
+    transition: .0s !important;
+}
+
+li a:hover,
+li span:hover {
+    background-color: #ffbb4a1f;
+    color: var(--primary) !important;
+}
+
+.expand-subMenu {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+/* side bar */
+/* Main Starts */
+@media screen and (min-width: 768px) {
+    .right-padding {
+        padding-right: 270px !important;
+    }
+}
+
+main {
+    padding-top: 90px;
+}
+
+/* Fliter Part */
+.select-container {
+    padding: 4px 10px 4px 80px;
+    border-bottom: 1px solid var(--primary);
+}
+
+select {
+    display: none;
+}
+
+.fliter .select-arrow {
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 9px;
+    background-color: var(--primary);
+    clip-path: polygon(0px 0px, 100% 0%, 50% 100%);
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+/* Options Style */
+.options {
+    margin: 10px 0px;
+    right: 0px;
+    box-shadow: 0px 0px 5px #b9b9b9;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 0;
+    z-index: 99999999999;
+}
+
+.options .option {
+    background-color: var(--primary);
+    padding: 6px;
+    color: white;
+    border-top: 1px solid white;
+}
+
+.options .option:first-child {
+    border-top: none;
+}
+
+.options .option:hover {
+    background-color: #9f6400;
+}
+
+/* Options Style */
+/* Expand Filter */
+.filter-group {
+    height: 0;
+}
+
+/* Expand Filter */
+/* Fliter Part */
+/* Product Style */
+.products {
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+}
+
+.product {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+.product:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+    transform: translateY(-5px);
+}
+
+.product .pName {
+    text-underline-offset: 15px;
+}
+
+/* Product Style */
+/* Main Ends */

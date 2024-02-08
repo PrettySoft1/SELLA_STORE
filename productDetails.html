@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/depts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/productDetails.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <title>Product Details | Product Name</title>
+</head>
+<body dir="rtl">
+    <nav class="position-fixed w-100 sticky-top ">
+        <div class="containers px-2 px-md-5 d-flex justify-content-between align-items-center">
+            <div class="right d-flex gap-2 d-flex align-items-center">
+                <i id="toggle-sidebar" class="mb-0 ps-2 fw-bold cursor-pointer fa-solid fa-bars text-primary"></i>
+                <form action="searchProducts.html" method="post" class="position-relative productSearch px-3">
+                    <input type="text" name="search" id="search" class="w-100" placeholder="البحث ...">
+                    <i class="searchIcon position-absolute fa-solid fa-search top-50 text-primary"></i>
+                </form>
+            </div>
+            <a href="index.html" class="logo user-select-none">
+                <h1 class="text-primary fw-bold fs-1 mb-0">SELLA</h1>
+                <p class="fs-6 fw-bold text-gray text-center mt-0">STORE</p>
+            </a>
+            <div class="account d-flex gap-2 d-flex align-items-center">
+                <!-- <i class="fa-solid fa-basket-shopping text-gray"></i> -->
+                <p class="account text-primary fw-bold cursor-pointer mb-0">تسجيل الدخول</p>
+            </div>
+        </div>
+    </nav>
+    <aside class="sidebar position-fixed bg-white pt-5 overflow-hidden" data-status="hidden">
+        <ul>
+            <li class="link px-3">
+                <a href="parts.html" class="text-gray pe-3 ps-5 py-2 my-3 d-block">
+                    <i class="fa-solid fa-home ps-2"></i>
+                    الصفحة الرئيسية
+                </a>
+            </li>
+            <li class="link parent-subMenu cursor-pointer px-3 user-select-none">
+                <span class="text-gray pe-3 ps-5 py-2 my-3 position-relative">
+                    <i class="fa-solid fa-stopwatch ps-2"></i>
+                    قسم الإكسسوارات
+                    <!-- <i class="expand-subMenu position-absolute fa-solid fa-long-arrow-alt-down top-50"></i> -->
+                </span>
+                <!-- <ul class="subMenu d-none">
+                    <li class="">
+                        <a href="menaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            الإكسسوارات الرجالية
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="womenaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            الإكسسوارات النسائية
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="babiesaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            اكسسوارات أطفال
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+            <li class="link parent-subMenu cursor-pointer px-3 user-select-none">
+                <span class="text-gray pe-3 ps-5 py-2 my-3 position-relative">
+                    <i class="fa-solid fa-suitcase-rolling ps-2"></i>
+                    قسم الملابس
+                    <!-- <i class="expand-subMenu position-absolute fa-solid fa-long-arrow-alt-down top-50"></i> -->
+                </span>
+                <!-- <ul class="subMenu d-none">
+                    <li class="">
+                        <a href="menaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            الإكسسوارات الرجالية
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="womenaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            الإكسسوارات النسائية
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="babiesaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            اكسسوارات أطفال
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+            <li class="link parent-subMenu cursor-pointer px-3 user-select-none">
+                <span class="text-gray pe-3 ps-5 py-2 my-3 position-relative">
+                    <i class="fa-solid fa-gift ps-2"></i>
+                    قسم الهدايا
+                    <!-- <i class="expand-subMenu position-absolute fa-solid fa-long-arrow-alt-down top-50"></i> -->
+                </span>
+                <!-- <ul class="subMenu d-none">
+                    <li class="">
+                        <a href="menaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            هدايا الأعراس
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="womenaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            الإكسسوارات النسائية
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="babiesaccessoaries.html" class="text-gray px-4 py-2 ">
+                            <i class="fa-solid fa-stopwatch ps-2"></i>
+                            اكسسوارات أطفال
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+            <li class="link px-3">
+                <a href="phones.html" class="text-gray pe-3 ps-5 py-2 my-3 d-block">
+                    <i class="fa-solid fa-phone ps-2"></i>
+                    قسم الهواتف
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="px-5">
+        <div class="small-center mx-auto">
+            <div class="budget my-3">
+                <h3 class="deptName fw-bolder text-gray">تفاصيل المنتج</h3>
+                <p class="deptPath fw-normal text-primary">الرئيسية / قسم المنتج / اسم المنتج</p>
+            </div>
+            <div class="productContainer d-flex gap-3 rounded-3 overflow-hidden mb-4">
+                <div class="productPhotos overflow-hidden position-relative w-50 ">
+                    <img src="imgs/1.jpg" alt="first" class="w-100 img-fluid">
+                    <img src="imgs/2.jpg" alt="first" class="w-100">
+                    <img src="imgs/3.jpg" alt="first" class="w-100">
+                    <div class="photoSelecter position-absolute py-2 w-100 bottom-0 bg-white d-flex justify-content-center gap-3 ">
+                        <span class="photoIndex d-block bg-gray  selected"></span>
+                        <span class="photoIndex d-block bg-gray "></span>
+                        <span class="photoIndex d-block bg-gray "></span>
+                    </div>
+                </div>
+                <div class="productDetails py-4 d-flex flex-column justify-content-center gap-2 ">
+                    <p class="productName fw-bold text-primary text-decoration-underline">اسم المنتج</p>
+                    <p class="details">اللون المتوفر</p>
+                    <p class="details">المقاسات والأحجام</p>
+                    <p class="productPrice">السعر : 300 ريال</p>
+                    <p class="addToBascket btn btn-primary ">إضافة إلى السلة</p>
+                </div>
+            </div>
+            <div class="productDescription position-relative my-5">
+                <p class="fw-bold text-gray">وصف المنتج</p>
+                <p class="text-gray pdesc">يفعل ماذا أ شخص آتي هو لوم. مدمر ذلك لذلك ديون مرات آخر مهندس الأكثر دعه خطأ. من ألم يعيق متع مكاتب نتيجة يمين طريق الكبرى المرونة.و يقام ما للرفض يبحث ذلك نحن فقط. مدمر معظم واحد لذلك. دعه يكره المعجل.ولا متطابقة لذلك حزن. صغير شيء ملكنا. أسبرناتور كيف كيف. التي ما أنا تحدث آخر سمحت قال. حزن كبير صغير. معماري مظلمة احصل كبير.احصل بحكمة فقط أسبرناتور تحمل كان واحد. للرفض نحن شخص يعيق سأشرح يمين خيار. الخدع الجميع متع وسعنا فليكن مدمر - أنا.وذلك لأن يقام يفعل. رفض مهجور مهندس كيف أيّ. خيار يسقط مهندس وذلك لو.حب أبداً الخدع شخص دعه الموعد ألم. حقا قلق آخر وظائف. هم يمارس سمحت.</p>
+            </div>
+            <div class="notes_reviews my-5">
+                <p class="fw-bold text-gray">التعليقات والمراجعات</p>
+                <!-- if there's no comments -->
+                <p class="text-gray">لا يوجد تعليقات حتى الآن ، كن أول المراجعين لهذا المنتج</p>
+                <!-- if the user logged in -->
+                <div class="rateStars d-flex gap-2">
+                    <i class="fa-regular fa-star text-primary"></i>
+                    <i class="fa-regular fa-star text-primary"></i>
+                    <i class="fa-regular fa-star text-primary"></i>
+                    <i class="fa-regular fa-star text-primary"></i>
+                    <i class="fa-regular fa-star text-primary"></i>
+                </div>
+                <form action="#" class="w-100 d-flex flex-column my-3 gap-3">
+                    <textarea name="review" id="review" cols="30" rows="10" class="rounded-3 py-2 px-4 text-gray " placeholder="ما تعليقك عن هذا المنتج"></textarea>
+                    <input type="submit" value="إضافة مراجعة" class="btn btn-primary me-auto">
+                </form>
+                <!-- if there's previous comments -->
+                <div class="my-5 comments d-flex flex-wrap gap-3">
+                    
+                </div>
+            </div>
+            <div class="relatedProducts">
+                <p class="fw-bold text-gray">منتجات ذات صلة</p>
+                <div class="products d-grid gap-3 py-4">
+
+                </div>
+            </div>
+            
+            <div class="relatedProducts">
+                <p class="fw-bold text-gray">منتجات قد تنال إعجابك</p>
+                <div class="products d-grid gap-3 py-4">
+
+                </div>
+            </div>
+        </div>
+        <p class="text-center fw-bold text-gray mb-2">جميع الحقوق محفوظة لصالح منشئ المحتوى&copy;</p>
+    </main>
+</body>
+</html>
+<script src="js/script.js"></script>
+<script src="js/parts.js"></script>
+<script src="js/img-scroll.js"></script>
+<script src="js/panels.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/onLoad.js"></script>
+<script src="js/expandAll.js"></script>
